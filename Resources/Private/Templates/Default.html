@@ -1,0 +1,27 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+	<!-- Page Header -->
+	<header class="masthead" style="background-image: url('{f:cObject(typoscriptObjectPath:'lib.pageResources')}')">
+	    <div class="overlay"></div>
+	    <div class="container">
+	      	<div class="row">
+		        <div class="col-lg-8 col-md-10 mx-auto">
+					<div class="site-heading">
+						<h1>{data.title}</h1>
+						<f:if condition="{data.subtitle}"><span class="subheading">{data.subtitle}</span></f:if>
+					</div>
+		        </div>
+	      	</div>
+	    </div>
+	</header>
+	<div class="container">
+	    <div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				<!-- Render main content colpost=0 -->
+				<f:cObject typoscriptObjectPath="lib.content"/>
+			</div>
+	    </div>
+  	</div>
+  
+</f:section>

@@ -1,0 +1,48 @@
+{
+  "name": "nitsan/ns-theme-cleanblog",
+  "type": "typo3-cms-extension",
+  "description": "The clean blog is a premium TYPO3 theme for personal or company blog with minimal & clean design, super easy settings and ultra fast page speed. Demo: https://demo.t3terminal.com/t3t-cleanblog/ PRO version: https://t3terminal.com/t3-clean-blog-free/",
+  "keywords": [
+    "TYPO3 CMS",
+    "blog",
+    "bootstrap",
+    "responsive",
+    "frontend",
+    "theme",
+    "web"
+  ],
+  "homepage": "https://github.com/nitsan-technologies/ns_theme_blog",
+  "authors": [
+    {
+        "name": "Team NITSAN",
+        "email": "info@nitsan.in",
+        "role": "Developer",
+        "homepage": "http://www.nitsan.in/"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/nitsan-technologies/ns_theme_blog/issues"
+  },
+  "license": "MIT",
+  "require": {
+    "typo3/cms-core": ">=8.0.0",
+    "georgringer/news": ">=4.3.0",
+    "gridelementsteam/gridelements": ">=8.0.0",
+    "nitsan/ns-basetheme": "^2.0",
+    "nitsan/ns-news-comments": "^2.0"
+  },
+  "config": {
+    "vendor-dir": ".Build/vendor/",
+    "bin-dir": ".Build/bin/"
+  },
+  "replace": {
+      "nitsan/ns-theme-cleanblog": "self.version"
+  },
+  "extra": {
+    "typo3/cms": {
+        "cms-package-dir": "{$vendor-dir}/typo3/cms",
+        "web-dir": ".Build/public",
+        "extension-key": "ns_theme_cleanblog"
+    }
+  }
+}
