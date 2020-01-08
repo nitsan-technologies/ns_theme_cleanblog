@@ -1,0 +1,7 @@
+plugin.tx_form.settings.yamlConfigurations {
+    120 = EXT:ns_theme_cleanblog/Configuration/Form/setup.yaml
+}
+ 
+module.tx_form.settings.yamlConfigurations {
+    120 = EXT:ns_theme_cleanblog/Configuration/Form/setup.yaml
+}
