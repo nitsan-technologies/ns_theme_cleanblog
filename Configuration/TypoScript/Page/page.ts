@@ -6,6 +6,7 @@ plugin.tx_nsCleanblog.settings.rootpage = {$ns_basetheme.website.settings.rootpa
 
 plugin.tx_nsCleanblog.settings.defaultColor = {$ns_theme_cleanblog.website.colors.defaultColor}
 plugin.tx_nsCleanblog.settings.brandColor = {$ns_theme_cleanblog.website.colors.brandColor}
+plugin.tx_nsCleanblog.settings.brandName = {$ns_basetheme.website.settings.logo_text}
 plugin.tx_nsCleanblog.settings.aHoverColor = {$ns_theme_cleanblog.website.colors.aHoverColor}
 plugin.tx_nsCleanblog.settings.buttonHoverColor = {$ns_theme_cleanblog.website.colors.buttonHoverColor}
 plugin.tx_nsCleanblog.settings.buttonColor = {$ns_theme_cleanblog.website.colors.buttonColor}
