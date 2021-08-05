@@ -1,0 +1,14 @@
+# Includes Basic Configuration of website
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ns_theme_cleanblog/Configuration/TypoScript/Configuration" extensions="typoscript">
+
+# Includes EXT:News Configuration
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ns_theme_cleanblog/Configuration/TypoScript/Extensions/News" extensions="typoscript">
+
+# Includes EXT:Fluid Configuration
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ns_theme_cleanblog/Configuration/TypoScript/Extensions/Fluid" extensions="typoscript">
+
+# Includes EXT:Grid Configuration
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ns_theme_cleanblog/Configuration/TypoScript/Extensions/Grid" extensions="typoscript">
+
+# Includes Page Configuration
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ns_theme_cleanblog/Configuration/TypoScript/Page" extensions="typoscript">

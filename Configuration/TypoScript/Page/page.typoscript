@@ -54,14 +54,14 @@ page {
 	// Initiate all the css-together
 	includeCSS {
 		20 = 
-		50 = typo3conf/ext/ns_theme_cleanblog/Resources/Public/vendor/fontawesome-free/css/all.min.css
-		80 = typo3conf/ext/ns_theme_cleanblog/Resources/Public/css/clean-blog.min.css
-		90 = typo3conf/ext/ns_theme_cleanblog/Resources/Public/css/custom.css
+		50 = EXT:ns_theme_cleanblog/Resources/Public/vendor/fontawesome-free/css/all.min.css
+		80 = EXT:ns_theme_cleanblog/Resources/Public/css/clean-blog.min.css
+		90 = EXT:ns_theme_cleanblog/Resources/Public/css/custom.css
 	}
 
 	// Initiate all the js-together
 	includeJSFooter {
-		50 = typo3conf/ext/ns_theme_cleanblog/Resources/Public/js/clean-blog.min.js
+		50 = EXT:ns_theme_cleanblog/Resources/Public/js/clean-blog.min.js
 	}
 	// Let's start fluid_styled_content
 	1 = FLUIDTEMPLATE
