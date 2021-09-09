@@ -11,11 +11,11 @@ $EM_CONF['ns_theme_cleanblog'] = array(
 	'title' => '[NITSAN] Clean Blog TYPO3 Template',
 	'description' => 'The clean blog is a premium TYPO3 template for personal or company blog with minimal & clean design, super easy settings and ultra fast page speed. Live-Demo: https://demo.t3terminal.com/?theme=t3t-cleanblog PRO version: https://t3terminal.com/t3-clean-blog-free-typo3-template',
 	'category' => 'templates',
-	'author' => 'T3:Sonal Chauhan, QA:Vandna Kalivada',
+	'author' => 'NITSAN Technologies Pvt Ltd',
 	'author_email' => 'info@nitsan.in',
 	'author_company' => 'NITSAN Technologies Pvt Ltd',
 	'state' => 'stable',
-	'version' => '2.1.6',
+	'version' => '2.1.7',
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '8.0.0-10.99.99',
