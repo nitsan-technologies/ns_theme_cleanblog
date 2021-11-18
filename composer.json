@@ -28,7 +28,7 @@
     "typo3/cms-core": ">=9.0.0",
     "georgringer/news": "^8.0.0",
     "gridelementsteam/gridelements": "^9 || ^10",
-    "nitsan/ns-basetheme": ">=10.4.6",
+    "nitsan/ns-basetheme": ">=9.0.0",
     "nitsan/ns-news-comments": "^4.0.0"
   },
   "replace": {
