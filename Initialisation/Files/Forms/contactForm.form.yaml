@@ -8,7 +8,7 @@ prototypeName: standard
 finishers:
   -
     options:
-      pageUid: '9'
+      pageUid: '10'
       additionalParameters: ''
     identifier: Redirect
   -

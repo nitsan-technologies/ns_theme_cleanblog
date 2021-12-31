@@ -13,7 +13,13 @@
                 <source>Read more!</source>
             </trans-unit>
             <trans-unit id="oldernews">
-                <source>Older Posts</source>
+                <source>Previous Posts</source>
+            </trans-unit>
+            <trans-unit id="nextnews">
+                <source>Next Posts</source>
+            </trans-unit>
+            <trans-unit id="viewall">
+                <source>View All</source>
             </trans-unit>
             <trans-unit id="postedby">
                 <source>Posted by</source>

@@ -1,7 +1,7 @@
 # Let's define some constants for global configuration
 ns_theme_cleanblog {	
 	website {
-		colors{
+		colors {
 			#cat = ns_theme_cleanblog/website/colors/07; type=color; label= Default(<p>) color
 			defaultColor = #7c7c7c
 
@@ -18,19 +18,19 @@ ns_theme_cleanblog {
 			buttonColor = #2DA4E9
 
 			#cat = ns_theme_cleanblog/website/colors/07; type=color; label= Background color
-			backgroundColor =  #00132D
+			backgroundColor = #00132D
 
 			#cat = ns_theme_cleanblog/website/colors/07; type=color; label= Body Background Color
 			bodyBackgroundColor = #ffffff
 
 			#cat = ns_theme_cleanblog/website/colors/07; type=color; label= Link(<a>) color
-			defaultLinkColor =  #7C7C7C
+			defaultLinkColor = #7C7C7C
 
 			#cat = ns_theme_cleanblog/website/colors/07; type=color; label= Heading color
 			headingColor = #7c7c7c
 		}
 
-		fonts{
+		fonts {
 			#cat = ns_theme_cleanblog/website/fonts/10; type=string; label= Default google font url
 			googleFontURL =	https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800
 

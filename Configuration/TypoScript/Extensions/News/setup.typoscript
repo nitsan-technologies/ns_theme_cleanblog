@@ -17,22 +17,3 @@ plugin.tx_news {
 		}
 	}
 }
-
-# Used when need to extend news plugin
-# plugin.tx_news {
-#     persistence {
-#         classes {
-#             GeorgRinger\News\Domain\Model\News {
-#                     subclasses {
-#                             0 = TYPO3\nsCleanblog\Domain\Model\News
-#                     }
-#             }
-#            TYPO3\nsCleanblog\Domain\Model\News {
-#                     mapping {
-#                             recordType = 0
-#                             tableName = tx_news_domain_model_news
-#                     }
-#             }
-#         }
-#     }
-# }

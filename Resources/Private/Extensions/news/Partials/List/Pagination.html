@@ -1,0 +1,20 @@
+<ul class="f3-widget-paginator">
+    <f:if condition="{pagination.previousPageNumber} && {pagination.previousPageNumber} >= {pagination.firstPageNumber}">
+        <f:then>
+            <div class="clearfix older-page">
+                <a href="{f:uri.action(action:actionName, arguments:{currentPage: pagination.previousPageNumber},addQueryString:1)}" title="{f:translate(key:'pagination.previous')}" class="btn btn-primary float-right">
+                    <span>&larr;</span> <f:translate key="oldernews" extensionName="ns_theme_cleanblog" />
+                </a>
+            </div>
+        </f:then>
+    </f:if>
+    <f:if condition="{pagination.nextPageNumber} && {pagination.nextPageNumber} <= {pagination.lastPageNumber}">
+        <f:then>
+            <div class="clearfix">
+                <a href="{f:uri.action(action:actionName, arguments:{currentPage: pagination.nextPageNumber},addQueryString:1)}" title="{f:translate(key:'pagination.next')}" class="btn btn-primary float-right">
+                    <f:translate key="nextnews" extensionName="ns_theme_cleanblog" /><span>&rarr;</span>
+                </a>
+            </div>
+        </f:then>
+    </f:if>
+</ul>

@@ -1,6 +1,10 @@
-rootPageId: 1
-base: '/'
-baseVariants: {  }
+base: /
+baseVariants: {}
+errorHandling:
+  -
+    errorCode: '404'
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=3'
 languages:
   -
     title: English
@@ -14,17 +18,12 @@ languages:
     hreflang: en
     direction: ltr
     flag: en-us-gb
-errorHandling:
-  -
-    errorCode: '404'
-    errorHandler: Page
-    errorContentSource: 't3://page?uid=6'
-routes: {  }
+rootPageId: 1
 routeEnhancers:
   NewsPlugin:
     type: Extbase
     limitToPages:
-      - 15
+      - 13
       - 0
       - 0
     extension: News
@@ -59,3 +58,29 @@ routeEnhancers:
         type: PersistedAliasMapper
         tableName: tx_news_domain_model_tag
         routeFieldName: title
+  News:
+    type: Extbase
+    extension: News
+    plugin: Pi1
+    routes:
+      -
+        routePath: '/{news-title}'
+        _controller: 'News::detail'
+        _arguments:
+          news-title: news
+    defaultController: 'News::list'
+    requirements:
+      news_title: '^[a-z0-9].*$'
+      page: \d+
+    aspects:
+      news-title:
+        type: PersistedPatternMapper
+        tableName: tx_news_domain_model_news
+        routeFieldPattern: '^(?P<path_segment>.+)$'
+        routeFieldName: path_segment
+        routeFieldResult: '{path_segment}'
+      page:
+        type: StaticRangeMapper
+        start: '1'
+        end: '1000'
+routes: {}
