@@ -28,7 +28,7 @@
     "typo3/cms-core": ">=10.0.0",
     "georgringer/news": "^9.0.0",
     "nitsan/ns-basetheme": ">=10.0.0",
-    "nitsan/ns-news-comments": ">=5.9.99"
+    "nitsan/ns-news-comments": "^5.0.0"
   },
   "replace": {
       "nitsan/ns-theme-cleanblog": "self.version"
