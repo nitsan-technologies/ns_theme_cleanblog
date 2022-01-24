@@ -31,7 +31,7 @@
     "nitsan/ns-news-comments": "^5.0.0"
   },
   "replace": {
-      "nitsan/ns-theme-cleanblog": "self.version"
+      "typo3-ter/ns-theme-cleanblog": "self.version"
   },
   "config": {
     "vendor-dir": ".Build/vendor/",
