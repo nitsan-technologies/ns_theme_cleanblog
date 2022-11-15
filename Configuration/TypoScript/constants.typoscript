@@ -1,3 +1,5 @@
+ns_basetheme.website.settings.footer_menu >
+
 # Let's define some constants for global configuration
 ns_theme_cleanblog {	
 	website {
