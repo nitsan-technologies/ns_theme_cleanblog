@@ -28,7 +28,7 @@ $EM_CONF[$_EXTKEY] = array (
       'typo3' => '12.0.0-12.5.99',
       'news' => '11.0.0-11.9.99',
       'ns_basetheme' => '12.0.0-12.5.99',
-      'ns_news_comments' => '6.0.0-6.5.99',
+      'ns_news_comments' => '12.0.0-12.5.99',
     ),
     'conflicts' => 
     array (
