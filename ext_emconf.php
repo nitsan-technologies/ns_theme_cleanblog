@@ -10,14 +10,13 @@
  * writing. "version" and "dependencies" must not be touched!
  ***************************************************************/
 
-$EM_CONF[$_EXTKEY] = array (
+$EM_CONF['ns_theme_cleanblog'] = array (
   'title' => '[NITSAN] T3 Clean Blog | Free TYPO3 Template',
   'description' => 'T3 Clean Blog Free TYPO3 Template is a premium TYPO3 theme for personal or company blog with minimal & clean design, super easy settings, light, and ultra-fast page speed. Live-Demo: https://demo.t3terminal.com/?theme=t3t-cleanblog PRO version: https://t3planet.com/t3-clean-blog-free-typo3-template',
   'category' => 'templates',
-  'version' => '4.0.0',
+  'version' => '12.0.0',
   'state' => 'stable',
   'uploadfolder' => false,
-  'clearcacheonload' => false,
   'author' => 'Team NITSAN',
   'author_email' => 'info@nitsan.in',
   'author_company' => 'NITSAN Technologies Pvt Ltd',
