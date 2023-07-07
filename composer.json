@@ -25,10 +25,10 @@
   },
   "license": "MIT",
   "require": {
-    "typo3/cms-core": "^10.0  || ^11.0 ",
-    "georgringer/news": "^10.0",
-    "nitsan/ns-basetheme": ">=10.0.0",
-    "nitsan/ns-news-comments": "^5.0.0"
+    "typo3/cms-core": "^12.0",
+    "georgringer/news": "^11.0",
+    "nitsan/ns-basetheme": "^12.0.0",
+    "nitsan/ns-news-comments": "^12.0"
   },
   "replace": {
       "typo3-ter/ns-theme-cleanblog": "self.version"
