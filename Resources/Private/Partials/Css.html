@@ -1,28 +1,54 @@
-<style>
+<f:variable name="googleFontURL1">{settings.googleFontURL}</f:variable>
+<f:variable name="defaultFontsName">{settings.defaultFontsName}</f:variable>
+<f:variable name="defaultColor">{settings.defaultColor}</f:variable>
+<f:variable name="bodyBackgroundColor">{settings.bodyBackgroundColor}</f:variable>
+<f:variable name="headingFontsName">{settings.headingFontsName}</f:variable>
+<f:variable name="headingColor">{settings.headingColor}</f:variable>
+<f:variable name="defaultLinkColor">{settings.defaultLinkColor}</f:variable>
+<f:variable name="brandColor">{settings.brandColor}</f:variable>
+<f:variable name="aHoverColor">{settings.aHoverColor}</f:variable>
+<f:variable name="buttonHoverColor">{settings.buttonHoverColor}</f:variable>
+<f:variable name="buttonColor">{settings.buttonColor}</f:variable>
+<f:variable name="backgroundColor">{settings.backgroundColor}</f:variable>
 
-    @import url({settings.googleFontURL});
-    @import url({settings.headingFontsURL});
 
+
+
+<f:asset.css identifier="identifier123" priority="true">
+    <f:if condition="{googleFontURL1}">
+        @import url({googleFontURL1});
+    </f:if>    
     body {    
-        font-family: {settings.defaultFontsName};
-        color: {settings.defaultColor};
-        background-color: {settings.bodyBackgroundColor};
-    }
+        <f:if condition="{defaultFontsName}">
+            font-family: {defaultFontsName};
+        </f:if>
 
+        <f:if condition="{defaultColor}">
+            color: {defaultColor};
+        </f:if>
+        <f:if condition="{bodyBackgroundColor}">
+            background-color: {bodyBackgroundColor};
+        </f:if>    
+    }
     h1, h2, h3, h4, h5, h6{
-        font-family: {settings.headingFontsName};
-        color: {settings.headingColor};
+        <f:if condition="{headingFontsName}">
+            font-family: {headingFontsName};
+        </f:if>
+        <f:if condition="{headingColor}">
+            color: {headingColor};
+        </f:if>
     }    
-
     a, .go-top, .download-links li a{
-        color: {settings.defaultLinkColor};
+        <f:if condition="{defaultLinkColor}">
+            color: {defaultLinkColor};
+        </f:if>
     }
-
     .logo:hover span,
     .logo:focus span{
-        color: {settings.defaultLinkColor};
+        <f:if condition="{defaultLinkColor}">
+            color: {defaultLinkColor};
+        </f:if>
     } 
-
     p a,
     .logo span,
     .logo:hover,
@@ -35,7 +61,10 @@
     p.color-text,
     .pagination .page-item .page-link,
     .tx-indexedsearch-browsebox li a{
-        color: {settings.brandColor};
+        <f:if condition="{brandColor}">
+            color: {brandColor};
+        </f:if>
+       
     }
     a:hover, a:focus, 
     em:hover, i:hover,
@@ -51,60 +80,84 @@
     .sitemap-lists li a:active,
     .btn.btn-transparent:focus, .btn.btn-transparent:hover,
     .content-section .contact-detail ul li a:hover {
-        color: {settings.aHoverColor};
+        <f:if condition="{aHoverColor}">
+            color: {aHoverColor};
+        </f:if>
     }
-
     p a:hover,
     p a:focus{
-        color: {settings.buttonHoverColor};
+        <f:if condition="{buttonHoverColor}">
+            color: {buttonHoverColor};
+        </f:if>
     }
-
-
     .download-links li a:hover i{
-        color: {settings.brandColor};
+        <f:if condition="{brandColor}">
+            color: {brandColor};
+        </f:if>
     }      
-
     input:active, input:focus, select:active, select:focus, textarea:active, textarea:focus,
     body .cc_container .cc_btn{
-        border-color: {settings.brandColor};
+        <f:if condition="{brandColor}">
+            border-color: {brandColor};
+        </f:if>
     }
     .carousel-indicators li.active,
     .testimonials .carousel-indicators li.active,
     .menu-trigger .bars, 
     body .cc_container .cc_btn{
-        background-color: {settings.brandColor};
+        <f:if condition="{brandColor}">
+            background-color: {brandColor};
+        </f:if>
     }
 
     .btn.btn-primary {
-        background-color: {settings.buttonColor};
+        <f:if condition="{buttonColor}">
+            background-color: {buttonColor};
+        </f:if>
     }
 
     .btn.btn-primary:focus, .btn.btn-primary:hover,
     body .cc_container .cc_btn:hover{
-        background-color: {settings.buttonHoverColor};
-        border-color: {settings.aHoverColor};
+        <f:if condition="{buttonHoverColor}">
+            background-color: {buttonHoverColor};
+        </f:if>
+        <f:if condition="{aHoverColor}">
+            border-color: {aHoverColor};
+        </f:if>
     }
 
 
     .btn-primary:not([disabled]):not(.disabled).active, .btn-primary:not([disabled]):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
-        background-color: {settings.buttonHoverColor};      
+        <f:if condition="{buttonHoverColor}">
+            background-color: {buttonHoverColor}; 
+        </f:if>     
     }
 
     .footer-page{
-        background-color: {settings.backgroundColor};
+        <f:if condition="{backgroundColor}">
+            background-color: {settings.backgroundColor};
+        </f:if>     
+     
     }
     .footer-page h2,
     .footer-page h3,
     .footer-page h4{
-        color: {settings.brandColor};
+        <f:if condition="{brandColor}">
+            color: {brandColor};
+        </f:if>
     }
 
     /*  .footer-page{
-          background-color: {settings.brandColor};
+        <f:if condition="{brandColor}">
+            background-color: {brandColor};
+        </f:if>
       }
       .footer-page h2,
       .footer-page h3,
       .footer-page h4{
-              color: {settings.brandColor};
+        <f:if condition="{brandColor}">
+            color: {brandColor};
+        </f:if>
       }*/
-</style>
+</f:asset.css>
+   
