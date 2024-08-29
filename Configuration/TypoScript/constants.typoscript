@@ -4,46 +4,46 @@ ns_basetheme.website.settings.footer_menu >
 ns_theme_cleanblog {	
 	website {
 		colors {
-			#cat = ns_style/400/01; type=color; label= Default(<p>) color
+			#cat = ns_style/400/01; type=color; label= Default Color (<p>)
 			defaultColor = #7c7c7c
 
-			#cat = ns_style/400/02; type=color; label= Theme color
+			#cat = ns_style/400/02; type=color; label= Theme Color
 			brandColor = #2da4e9
 
-			#cat = ns_style/400/03; type=color; label= Link(<a>) hover color
+			#cat = ns_style/400/03; type=color; label= Link Hover Color (<a>)
 			aHoverColor = #2da4e9
 
-			#cat = ns_style/400/04; type=color; label= Button hover color
+			#cat = ns_style/400/04; type=color; label= Button Hover Color
 			buttonHoverColor = #137bb7
 
-			#cat = ns_style/400/05; type=color; label= Button color
+			#cat = ns_style/400/05; type=color; label= Button Color
 			buttonColor = #2DA4E9
 
-			#cat = ns_style/400/06; type=color; label= Background color
+			#cat = ns_style/400/06; type=color; label= Background Color
 			backgroundColor = #00132D
 
 			#cat = ns_style/400/07; type=color; label= Body Background Color
 			bodyBackgroundColor = #ffffff
 
-			#cat = ns_style/400/08; type=color; label= Link(<a>) color
+			#cat = ns_style/400/08; type=color; label= Link Color (<a>)
 			defaultLinkColor = #7C7C7C
 
-			#cat = ns_style/400/09; type=color; label= Heading color
+olor
 			headingColor = #7c7c7c
 		}
 
 		fonts {
-			#cat = ns_style/400/10; type=string; label= Default google font url
+			#cat = ns_style/400/10; type=string; label= Default Google Font URL
 			googleFontURL =	https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800
 
-			#cat = ns_style/400/11; type=string; label= Heading google font url
+			#cat = ns_style/400/11; type=string; label= Heading Google Font URL
 			headingFontsURL = https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic
 
-			#cat = ns_style/400/12; type=string; label= Default(<p>) font family name
-			defaultFontsName = lora
+			#cat = ns_style/400/12; type=string; label= Default Font Family Name
+			defaultFontsName = Open Sans
 
-			#cat = ns_style/400/13; type=string; label= Heading font family name
-			headingFontsName = lora
+			#cat = ns_style/400/13; type=string; label= Heading Font Family Name
+			headingFontsName = Lora
 		}
 		settings {
 			#cat = ns_theme_cleanblog/website/settings/01; type=string; label=Footer Facebook Link
