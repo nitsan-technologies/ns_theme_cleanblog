@@ -24,7 +24,7 @@ $EM_CONF['ns_theme_cleanblog'] = array (
   array (
     'depends' => 
     array (
-      'typo3' => '13.0.0-13.5.99',
+      'typo3' => '12.0.0-13.5.99',
       'news' => '12.0.0-12.9.99',
       'ns_basetheme' => '13.0.0-13.5.99',
       'ns_news_comments' => '13.0.0-13.5.99',
