@@ -11,15 +11,15 @@
  ***************************************************************/
 
 $EM_CONF['ns_theme_cleanblog'] = array (
-  'title' => 'T3 Clean Blog | Free TYPO3 Template',
-  'description' => 'T3 Clean Blog is a premium TYPO3 template for personal or company blogs. Developed with meticulous attention to detail and minimal design aesthetics, it offers effortless settings, easy configuration, and prioritizes SEO and optimized page speed.',
+  'title' => 'T3 Clean Blog – TYPO3 Blog Template',
+  'description' => 'A modern and minimalist TYPO3 blog template perfect for personal and business blogs. Easy to configure, SEO-optimized, and performance-focused for TYPO3 v12 & v13.',
   'category' => 'templates',
   'version' => '13.0.0',
   'state' => 'stable',
   'uploadfolder' => false,
-  'author' => 'Team NITSAN',
-  'author_email' => 'info@nitsan.in',
-  'author_company' => 'NITSAN Technologies Pvt Ltd',
+  'author' => 'Team T3Planet',
+  'author_email' => 'info@t3planet.de',
+  'author_company' => 'T3Planet',
   'constraints' => 
   array (
     'depends' => 
