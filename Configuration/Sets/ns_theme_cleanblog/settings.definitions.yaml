@@ -1,0 +1,124 @@
+categories:
+  ns_theme_cleanblog:
+    label: 'Clean Blog Theme'
+  ns_theme_cleanblog.style:
+    label: 'Style'
+    parent: ns_theme_cleanblog
+  ns_theme_cleanblog.style.colors:
+    label: 'Colors'
+    parent: ns_theme_cleanblog.style
+  ns_theme_cleanblog.style.fonts:
+    label: 'Fonts'
+    parent: ns_theme_cleanblog.style
+  ns_theme_cleanblog.website:
+    label: 'Website'
+    parent: ns_theme_cleanblog
+  ns_theme_cleanblog.website.settings:
+    label: 'Social & Analytics'
+    parent: ns_theme_cleanblog.website
+  ns_theme_cleanblog.website.hfooter:
+    label: 'Footer'
+    parent: ns_theme_cleanblog.website
+  ns_theme_cleanblog.website.paths:
+    label: 'Paths'
+    parent: ns_theme_cleanblog.website
+
+settings:
+  ns_theme_cleanblog.website.colors.defaultColor:
+    label: 'Default Color (<p>)'
+    category: ns_theme_cleanblog.style.colors
+    type: color
+    default: '#7c7c7c'
+  ns_theme_cleanblog.website.colors.brandColor:
+    label: 'Theme Color'
+    category: ns_theme_cleanblog.style.colors
+    type: color
+    default: '#2da4e9'
+  ns_theme_cleanblog.website.colors.aHoverColor:
+    label: 'Link Hover Color (<a>)'
+    category: ns_theme_cleanblog.style.colors
+    type: color
+    default: '#2da4e9'
+  ns_theme_cleanblog.website.colors.buttonHoverColor:
+    label: 'Button Hover Color'
+    category: ns_theme_cleanblog.style.colors
+    type: color
+    default: '#137bb7'
+  ns_theme_cleanblog.website.colors.buttonColor:
+    label: 'Button Color'
+    category: ns_theme_cleanblog.style.colors
+    type: color
+    default: '#2DA4E9'
+  ns_theme_cleanblog.website.colors.backgroundColor:
+    label: 'Background Color'
+    category: ns_theme_cleanblog.style.colors
+    type: color
+    default: '#00132D'
+  ns_theme_cleanblog.website.colors.bodyBackgroundColor:
+    label: 'Body Background Color'
+    category: ns_theme_cleanblog.style.colors
+    type: color
+    default: '#ffffff'
+  ns_theme_cleanblog.website.colors.defaultLinkColor:
+    label: 'Link Color (<a>)'
+    category: ns_theme_cleanblog.style.colors
+    type: color
+    default: '#7C7C7C'
+  ns_theme_cleanblog.website.colors.headingColor:
+    label: 'Heading Color'
+    category: ns_theme_cleanblog.style.colors
+    type: color
+    default: '#7c7c7c'
+
+  ns_theme_cleanblog.website.fonts.googleFontURL:
+    label: 'Default Google Font URL'
+    category: ns_theme_cleanblog.style.fonts
+    type: string
+    default: 'https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+  ns_theme_cleanblog.website.fonts.headingFontsURL:
+    label: 'Heading Google Font URL'
+    category: ns_theme_cleanblog.style.fonts
+    type: string
+    default: 'https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic'
+  ns_theme_cleanblog.website.fonts.defaultFontsName:
+    label: 'Default Font Family Name'
+    category: ns_theme_cleanblog.style.fonts
+    type: string
+    default: 'Open Sans'
+  ns_theme_cleanblog.website.fonts.headingFontsName:
+    label: 'Heading Font Family Name'
+    category: ns_theme_cleanblog.style.fonts
+    type: string
+    default: 'Lora'
+
+  ns_theme_cleanblog.website.settings.facebook:
+    label: 'Footer Facebook Link'
+    category: ns_theme_cleanblog.website.settings
+    type: string
+    default: ''
+  ns_theme_cleanblog.website.settings.twitter:
+    label: 'Footer Twitter Link'
+    category: ns_theme_cleanblog.website.settings
+    type: string
+    default: ''
+  ns_theme_cleanblog.website.settings.github:
+    label: 'Footer Github Link'
+    category: ns_theme_cleanblog.website.settings
+    type: string
+    default: ''
+  ns_theme_cleanblog.website.settings.googleanalytics:
+    label: 'Google Analytics ID'
+    category: ns_theme_cleanblog.website.settings
+    type: string
+    default: ''
+
+  ns_theme_cleanblog.website.hfooter.linktext:
+    label: 'Footer Copyright Last Link Text'
+    category: ns_theme_cleanblog.website.hfooter
+    type: string
+    default: ''
+  ns_theme_cleanblog.website.hfooter.link:
+    label: 'Footer Copyright Last Link'
+    category: ns_theme_cleanblog.website.hfooter
+    type: string
+    default: ''

@@ -1,0 +1,14 @@
+# Includes Basic Configuration of website
+@import "EXT:ns_theme_cleanblog/Configuration/TypoScript/Configuration"
+
+# Includes EXT:News Configuration
+@import "EXT:ns_theme_cleanblog/Configuration/TypoScript/Extensions/News"
+
+# Includes EXT:Form Configuration
+@import "EXT:ns_theme_cleanblog/Configuration/TypoScript/Extensions/Form"
+
+# Includes EXT:Fluid Configuration
+@import "EXT:ns_theme_cleanblog/Configuration/TypoScript/Extensions/Fluid"
+
+# Includes Page Configuration
+@import "EXT:ns_theme_cleanblog/Configuration/TypoScript/Page"

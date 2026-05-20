@@ -1,0 +1,5 @@
+@import 'EXT:ns_theme_cleanblog/Configuration/TypoScript/constants.typoscript'
+# Site set settings are defined in settings.definitions.yaml / settings.yaml.
+# TypoScript constants are exposed automatically as {$ns_theme_cleanblog.*}
+
+ns_basetheme.website.settings.footer_menu >
