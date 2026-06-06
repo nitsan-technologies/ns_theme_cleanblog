@@ -122,3 +122,24 @@ settings:
     category: ns_theme_cleanblog.website.hfooter
     type: string
     default: ''
+
+  ns_theme_cleanblog.website.paths.templateRootPath:
+    label: 'Template Path'
+    category: ns_theme_cleanblog.website.paths
+    type: string
+    default: 'EXT:ns_theme_cleanblog/Resources/Private/Templates/'
+  ns_theme_cleanblog.website.paths.layoutRootPath:
+    label: 'Layouts Path'
+    category: ns_theme_cleanblog.website.paths
+    type: string
+    default: 'EXT:ns_theme_cleanblog/Resources/Private/Layouts/'
+  ns_theme_cleanblog.website.paths.partialRootPath:
+    label: 'Partials Path'
+    category: ns_theme_cleanblog.website.paths
+    type: string
+    default: 'EXT:ns_theme_cleanblog/Resources/Private/Partials/'
+  ns_theme_cleanblog.website.settings.auth-detail:
+    label: 'Author Detail Page UID'
+    category: ns_theme_cleanblog.website.settings
+    type: int
+    default: 0

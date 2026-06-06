@@ -2,3 +2,13 @@
 # and Configuration/Sets/ns_theme_cleanblog/settings.yaml
 
 ns_basetheme.website.settings.footer_menu >
+
+ns_theme_cleanblog {
+	website {
+		paths {
+			templateRootPath = EXT:ns_theme_cleanblog/Resources/Private/Templates/
+			layoutRootPath = EXT:ns_theme_cleanblog/Resources/Private/Layouts/
+			partialRootPath = EXT:ns_theme_cleanblog/Resources/Private/Partials/
+		}
+	}
+}
