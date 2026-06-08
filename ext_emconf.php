@@ -28,6 +28,7 @@ $EM_CONF['ns_theme_cleanblog'] = array (
       'news' => '13.0.0-14.9.99',
       'ns_basetheme' => '13.0.0-14.9.99',
       'ns_news_comments' => '14.0.0-14.9.99',
+      'content_blocks' => '2.2.0-2.9.99',
     ),
     'conflicts' => 
     array (

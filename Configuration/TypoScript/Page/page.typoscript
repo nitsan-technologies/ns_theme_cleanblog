@@ -2,8 +2,7 @@ plugin.tx_nsCleanblog.settings {
 	facebook = {$ns_theme_cleanblog.website.settings.facebook}
 	twitter = {$ns_theme_cleanblog.website.settings.twitter}
 	github = {$ns_theme_cleanblog.website.settings.github}
-	logo = {$ns_basetheme.website.settings.logo}
-	rootpage = {$ns_basetheme.website.settings.rootpage}
+	rootpage = {$ns_basetheme.website.settings.root}
 
 	defaultColor = {$ns_theme_cleanblog.website.colors.defaultColor}
 	brandColor = {$ns_theme_cleanblog.website.colors.brandColor}
@@ -23,10 +22,11 @@ plugin.tx_nsCleanblog.settings {
 
 	linktext = {$ns_theme_cleanblog.website.hfooter.linktext}
 	link = {$ns_theme_cleanblog.website.hfooter.link}
+	logo_text = {$ns_basetheme.website.settings.logo_text}
+	logo = {$ns_basetheme.website.settings.logo}
 	logo_width = {$ns_basetheme.website.settings.logo_width}
 	logo_height = {$ns_basetheme.website.settings.logo_height}
-	logo_text = {$ns_basetheme.website.settings.logo_text}
-}	
+}
 
 
 // Initiate Page Object
@@ -42,7 +42,7 @@ page {
 
 	// Initiate all the css-together
 	includeCSS {
-		20 = 
+		20 = EXT:ns_basetheme/Resources/Public/css/ns_basetheme.css
 		40 = EXT:ns_theme_cleanblog/Resources/Public/css/bootstrap.min.css
 		50 = EXT:ns_theme_cleanblog/Resources/Public/vendor/fontawesome-free/css/all.min.css
 		80 = EXT:ns_theme_cleanblog/Resources/Public/css/clean-blog.min.css
@@ -51,6 +51,8 @@ page {
 
 	// Initiate all the js-together
 	includeJSFooter {
+		30 = EXT:ns_basetheme/Resources/Public/Vendor/jquery/jquery.min.js
+		40 = EXT:ns_basetheme/Resources/Public/js/ns_basetheme.js
 		50 = EXT:ns_theme_cleanblog/Resources/Public/js/clean-blog.min.js
 	}
 	// Let's start fluid_styled_content
@@ -111,9 +113,19 @@ lib {
 
 	    2 = TEXT
 	    2 {
-	        value = {$ns_basetheme.website.settings.copyright}
+	        data = sitesettings:copyright
 	        wrap = |
 	    }
 	}
 
+}
+
+##########################
+### Render Back To Top ###
+##########################
+
+page.footerData.9901 = TEXT
+page.footerData.9901 {
+	if.isTrue.data = sitesettings:ns_basetheme.website.settings.back_to_top
+	value = <!-- Render from EXT:ns_theme_cleanblog --><a href="#" id="ns_basetheme_back_to_top" title="Back to top">&uarr;</a>
 }

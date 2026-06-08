@@ -2,4 +2,10 @@
 # Site set settings are defined in settings.definitions.yaml / settings.yaml.
 # TypoScript constants are exposed automatically as {$ns_theme_cleanblog.*}
 
+# Bridge basetheme Site Set keys (settings.definitions.yaml uses short key "copyright")
+ns_basetheme.website.settings.copyright = {$copyright}
+
+# Override legacy ns_basetheme defaults (Site Set settings.yaml wins when saved in backend)
+ns_basetheme.website.settings.logo = fileadmin/ns_theme_cleanblog/t3-blog-logo-black.svg
+
 ns_basetheme.website.settings.footer_menu >

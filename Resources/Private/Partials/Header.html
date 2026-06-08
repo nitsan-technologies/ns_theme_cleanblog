@@ -3,30 +3,9 @@
     <div class="container">
         <f:link.page pageUid="{settings.rootpage}" class="logo">
             <f:if condition="{settings.logo}">
-                <f:then>
-                    <f:if condition="{settings.logo_width}">
-                        <f:then>
-                            <f:variable name="imgWidth" value="width={settings.logo_width}" />
-                        </f:then>
-                        <f:else>
-                            <f:variable name="imgWidth" value="width=100px" />
-                        </f:else>
-                    </f:if>
-                    <f:if condition="{settings.logo_height}">
-                        <f:then>
-                            <f:variable name="imgHeight" value="height={settings.logo_height}" />
-                        </f:then>
-                        <f:else>
-                            <f:variable name="imgHeight" value="height=50px" />
-                        </f:else>
-                    </f:if>
-                    <img src="/{settings.logo}" alt="logo" />
-                    <f:if condition="{settings.logo_text}">{settings.logo_text}</f:if>
-                </f:then>
-                <f:else>
-                    <f:format.raw>{settings.brandName}</f:format.raw>
-                </f:else>
+                <f:image src="{settings.logo}" width="{settings.logo_width}" height="{settings.logo_height}" alt="{settings.logo_text}" />
             </f:if>
+            <f:if condition="{settings.logo_text}">{settings.logo_text}</f:if>
         </f:link.page>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
             data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"

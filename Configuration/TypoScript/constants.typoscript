@@ -1,6 +1,12 @@
 # Migrated to Configuration/Sets/ns_theme_cleanblog/settings.definitions.yaml
 # and Configuration/Sets/ns_theme_cleanblog/settings.yaml
 
+# Bridge basetheme Site Set key "copyright" from settings.definitions.yaml
+ns_basetheme.website.settings.copyright = {$copyright}
+
+# Override legacy ns_basetheme defaults (Site Set settings.yaml wins when saved in backend)
+ns_basetheme.website.settings.logo = fileadmin/ns_theme_cleanblog/t3-blog-logo-black.svg
+
 ns_basetheme.website.settings.footer_menu >
 
 ns_theme_cleanblog {
