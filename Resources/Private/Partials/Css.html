@@ -128,5 +128,18 @@
     .footer-page h4 {
         <f:if condition="{brandColor}">color: {brandColor};</f:if>
     }
+
+    header.masthead .site-heading,
+    header.masthead .site-heading h1,
+    header.masthead .site-heading .subheading {
+        color: #fff;
+    }
+
+    @media only screen and (min-width: 992px) {
+        #mainNav:not(.is-fixed) .navbar-nav > li.nav-item > a,
+        #mainNav:not(.is-fixed) .navbar-toggler {
+            color: #fff;
+        }
+    }
 </f:asset.css>
    

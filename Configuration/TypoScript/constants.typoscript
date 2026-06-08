@@ -1,16 +1,48 @@
-# Migrated to Configuration/Sets/ns_theme_cleanblog/settings.definitions.yaml
-# and Configuration/Sets/ns_theme_cleanblog/settings.yaml
+# Theme defaults for Clean Blog (TypoScript constants / Site Set)
 
-# Bridge basetheme Site Set key "copyright" from settings.definitions.yaml
-ns_basetheme.website.settings.copyright = {$copyright}
+copyright = T3Planet |
 
-# Override legacy ns_basetheme defaults (Site Set settings.yaml wins when saved in backend)
-ns_basetheme.website.settings.logo = fileadmin/ns_theme_cleanblog/t3-blog-logo-black.svg
-
-ns_basetheme.website.settings.footer_menu >
+ns_basetheme.website.settings {
+	logo = fileadmin/ns_theme_cleanblog/T3-blog-logo-white.svg
+	logo_width = 120
+	logo_height = 33
+	favicon = fileadmin/ns_theme_cleanblog/favicon.ico
+	root = 1
+	main_menu = 8
+	back_to_top = 0
+	copyright = {$copyright}
+}
 
 ns_theme_cleanblog {
 	website {
+		settings {
+			logo_alt = fileadmin/ns_theme_cleanblog/t3-blog-logo-black.svg
+			facebook = https://www.facebook.com
+			twitter = https://www.twitter.com
+			github = https://www.github.com
+			auth-detail = 36
+		}
+		hfooter {
+			linktext = NITSAN Technologies Pvt Ltd
+			link = https://www.nitsan.in
+		}
+		colors {
+			defaultColor = #212529
+			headingColor = #212529
+			defaultLinkColor = #212529
+			brandColor = #0085a1
+			aHoverColor = #0085a1
+			buttonColor = #0085a1
+			buttonHoverColor = #005f75
+			bodyBackgroundColor = #ffffff
+			backgroundColor = #00132D
+		}
+		fonts {
+			defaultFontsName = Lora
+			headingFontsName = Open Sans
+			googleFontURL = https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800
+			headingFontsURL = https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic
+		}
 		paths {
 			templateRootPath = EXT:ns_theme_cleanblog/Resources/Private/Templates/
 			layoutRootPath = EXT:ns_theme_cleanblog/Resources/Private/Layouts/

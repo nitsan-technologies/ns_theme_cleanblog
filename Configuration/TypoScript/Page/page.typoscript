@@ -24,6 +24,7 @@ plugin.tx_nsCleanblog.settings {
 	link = {$ns_theme_cleanblog.website.hfooter.link}
 	logo_text = {$ns_basetheme.website.settings.logo_text}
 	logo = {$ns_basetheme.website.settings.logo}
+	logo_alt = {$ns_theme_cleanblog.website.settings.logo_alt}
 	logo_width = {$ns_basetheme.website.settings.logo_width}
 	logo_height = {$ns_basetheme.website.settings.logo_height}
 }
@@ -82,6 +83,44 @@ page {
 			pagets__content.value = {$ns_theme_cleanblog.website.paths.templateRootPath}Content.html
 		}
 		settings < plugin.tx_nsCleanblog.settings
+
+		variables {
+			copyrightText = TEXT
+			copyrightText.data = sitesettings:copyright
+			logo = TEXT
+			logo.data = sitesettings:ns_basetheme.website.settings.logo
+			logo_alt = TEXT
+			logo_alt.data = sitesettings:ns_theme_cleanblog.website.settings.logo_alt
+			logo_width = TEXT
+			logo_width.data = sitesettings:ns_basetheme.website.settings.logo_width
+			logo_height = TEXT
+			logo_height.data = sitesettings:ns_basetheme.website.settings.logo_height
+			logo_text = TEXT
+			logo_text.data = sitesettings:ns_basetheme.website.settings.logo_text
+			facebook = TEXT
+			facebook.data = sitesettings:ns_theme_cleanblog.website.settings.facebook
+			twitter = TEXT
+			twitter.data = sitesettings:ns_theme_cleanblog.website.settings.twitter
+			github = TEXT
+			github.data = sitesettings:ns_theme_cleanblog.website.settings.github
+			linktext = TEXT
+			linktext.data = sitesettings:ns_theme_cleanblog.website.hfooter.linktext
+			link = TEXT
+			link.data = sitesettings:ns_theme_cleanblog.website.hfooter.link
+		}
+
+		dataProcessing {
+			101 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+			101 {
+				levels = 5
+				special = directory
+				special.value = TEXT
+				special.value.data = sitesettings:ns_basetheme.website.settings.main_menu
+				expandAll = 1
+				includeSpacer = 1
+				as = MainMenu
+			}
+		}
 	}
 }
 

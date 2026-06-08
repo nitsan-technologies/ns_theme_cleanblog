@@ -1,9 +1,9 @@
 <!-- Header -->
-<f:render partial="Header" arguments="{_all}"/>
+<f:render partial="Header" arguments="{settings: settings, MainMenu: MainMenu, logo: logo, logo_alt: logo_alt, logo_width: logo_width, logo_height: logo_height, logo_text: logo_text}" />
 
 <!--TYPO3SEARCH_begin-->
 <f:render section="main" />
 <!--TYPO3SEARCH_end-->
 
 <!-- Footer -->
-<f:render partial="Footer" />
+<f:render partial="Footer" arguments="{settings: settings, copyrightText: copyrightText, facebook: facebook, twitter: twitter, github: github, linktext: linktext, link: link}" />

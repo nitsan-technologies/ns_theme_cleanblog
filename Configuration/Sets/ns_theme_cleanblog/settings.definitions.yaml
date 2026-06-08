@@ -24,31 +24,68 @@ categories:
     parent: ns_theme_cleanblog.website
 
 settings:
+  copyright:
+    label: 'Copyright Text'
+    category: ns_theme_cleanblog.website.hfooter
+    type: string
+    default: 'T3Planet |'
+
+  ns_basetheme.website.settings.logo:
+    label: 'Logo'
+    category: ns_theme_cleanblog.website.settings
+    type: string
+    default: 'fileadmin/ns_theme_cleanblog/T3-blog-logo-white.svg'
+  ns_basetheme.website.settings.logo_width:
+    label: 'Logo Image Width'
+    category: ns_theme_cleanblog.website.settings
+    type: string
+    default: '120'
+  ns_basetheme.website.settings.logo_height:
+    label: 'Logo Image Height'
+    category: ns_theme_cleanblog.website.settings
+    type: string
+    default: '33'
+  ns_basetheme.website.settings.main_menu:
+    label: 'Main Menu Id'
+    category: ns_theme_cleanblog.website.settings
+    type: int
+    default: 8
+  ns_basetheme.website.settings.back_to_top:
+    label: 'Back To Top'
+    category: ns_theme_cleanblog.website.settings
+    type: bool
+    default: false
+  ns_basetheme.website.settings.favicon:
+    label: 'Favicon'
+    category: ns_theme_cleanblog.website.settings
+    type: string
+    default: 'fileadmin/ns_theme_cleanblog/favicon.ico'
+
   ns_theme_cleanblog.website.colors.defaultColor:
     label: 'Default Color (<p>)'
     category: ns_theme_cleanblog.style.colors
     type: color
-    default: '#7c7c7c'
+    default: '#212529'
   ns_theme_cleanblog.website.colors.brandColor:
     label: 'Theme Color'
     category: ns_theme_cleanblog.style.colors
     type: color
-    default: '#2da4e9'
+    default: '#0085a1'
   ns_theme_cleanblog.website.colors.aHoverColor:
     label: 'Link Hover Color (<a>)'
     category: ns_theme_cleanblog.style.colors
     type: color
-    default: '#2da4e9'
+    default: '#0085a1'
   ns_theme_cleanblog.website.colors.buttonHoverColor:
     label: 'Button Hover Color'
     category: ns_theme_cleanblog.style.colors
     type: color
-    default: '#137bb7'
+    default: '#005f75'
   ns_theme_cleanblog.website.colors.buttonColor:
     label: 'Button Color'
     category: ns_theme_cleanblog.style.colors
     type: color
-    default: '#2DA4E9'
+    default: '#0085a1'
   ns_theme_cleanblog.website.colors.backgroundColor:
     label: 'Background Color'
     category: ns_theme_cleanblog.style.colors
@@ -63,12 +100,12 @@ settings:
     label: 'Link Color (<a>)'
     category: ns_theme_cleanblog.style.colors
     type: color
-    default: '#7C7C7C'
+    default: '#212529'
   ns_theme_cleanblog.website.colors.headingColor:
     label: 'Heading Color'
     category: ns_theme_cleanblog.style.colors
     type: color
-    default: '#7c7c7c'
+    default: '#212529'
 
   ns_theme_cleanblog.website.fonts.googleFontURL:
     label: 'Default Google Font URL'
@@ -84,28 +121,34 @@ settings:
     label: 'Default Font Family Name'
     category: ns_theme_cleanblog.style.fonts
     type: string
-    default: 'Open Sans'
+    default: 'Lora'
   ns_theme_cleanblog.website.fonts.headingFontsName:
     label: 'Heading Font Family Name'
     category: ns_theme_cleanblog.style.fonts
     type: string
-    default: 'Lora'
+    default: 'Open Sans'
+
+  ns_theme_cleanblog.website.settings.logo_alt:
+    label: 'Fixed Navbar Logo (dark)'
+    category: ns_theme_cleanblog.website.settings
+    type: string
+    default: 'fileadmin/ns_theme_cleanblog/t3-blog-logo-black.svg'
 
   ns_theme_cleanblog.website.settings.facebook:
     label: 'Footer Facebook Link'
     category: ns_theme_cleanblog.website.settings
     type: string
-    default: ''
+    default: 'https://www.facebook.com'
   ns_theme_cleanblog.website.settings.twitter:
     label: 'Footer Twitter Link'
     category: ns_theme_cleanblog.website.settings
     type: string
-    default: ''
+    default: 'https://www.twitter.com'
   ns_theme_cleanblog.website.settings.github:
     label: 'Footer Github Link'
     category: ns_theme_cleanblog.website.settings
     type: string
-    default: ''
+    default: 'https://www.github.com'
   ns_theme_cleanblog.website.settings.googleanalytics:
     label: 'Google Analytics ID'
     category: ns_theme_cleanblog.website.settings
@@ -116,12 +159,12 @@ settings:
     label: 'Footer Copyright Last Link Text'
     category: ns_theme_cleanblog.website.hfooter
     type: string
-    default: ''
+    default: 'NITSAN Technologies Pvt Ltd'
   ns_theme_cleanblog.website.hfooter.link:
     label: 'Footer Copyright Last Link'
     category: ns_theme_cleanblog.website.hfooter
     type: string
-    default: ''
+    default: 'https://www.nitsan.in'
 
   ns_theme_cleanblog.website.paths.templateRootPath:
     label: 'Template Path'
@@ -142,4 +185,4 @@ settings:
     label: 'Author Detail Page UID'
     category: ns_theme_cleanblog.website.settings
     type: int
-    default: 0
+    default: 36
