@@ -1,3 +1,37 @@
+/* Logo swap: white over masthead, dark when navbar is fixed on scroll */
+#mainNav .logo .logo-img-dark {
+  display: none;
+}
+
+#mainNav.is-fixed .logo .logo-img-light {
+  display: none;
+}
+
+#mainNav.is-fixed .logo .logo-img-dark {
+  display: inline;
+}
+
+/* Keep Clean Blog masthead and navigation colors */
+header.masthead .site-heading,
+header.masthead .site-heading h1,
+header.masthead .site-heading .subheading {
+  color: #fff;
+}
+
+@media only screen and (min-width: 992px) {
+  #mainNav:not(.is-fixed) .navbar-nav > li.nav-item > a {
+    color: #fff;
+  }
+
+  #mainNav:not(.is-fixed) .navbar-toggler {
+    color: #fff;
+  }
+
+  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+    color: #212529;
+  }
+}
+
 .image-caption {
 	font-size: 14px;
 	font-style: italic;

@@ -1,4 +1,7 @@
 base: /
+dependencies:
+  - nitsan-ns-basetheme/ns_basetheme
+  - nitsan/ns-theme-cleanblog
 baseVariants: {}
 errorHandling:
   -

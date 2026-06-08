@@ -1,4 +1,7 @@
 <?php
+
+defined('TYPO3') or die();
+
 $_EXTKEY = "ns_theme_cleanblog";
 
 // Let's configuration of this extension from "Extension Manager"

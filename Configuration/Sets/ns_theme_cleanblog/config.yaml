@@ -1,0 +1,5 @@
+name: nitsan/ns-theme-cleanblog
+label: Clean Blog Theme Sets
+dependencies:
+  - nitsan-ns-basetheme/ns_basetheme
+pagets: EXT:ns_theme_cleanblog/Configuration/PageTSconfig/setup.typoscript
