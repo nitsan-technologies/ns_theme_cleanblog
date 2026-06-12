@@ -8,4 +8,7 @@ lib.contentElement {
 	layoutRootPaths {
 		10 = EXT:ns_theme_cleanblog/Resources/Private/Extensions/Fluid/Layouts/
 	}
+	dataProcessing {
+		1768551979 = record-transformation
+	}
 }

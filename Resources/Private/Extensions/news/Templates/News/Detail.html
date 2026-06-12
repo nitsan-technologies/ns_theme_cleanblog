@@ -63,14 +63,16 @@
 						      	<div class="row">
 							        <div class="col-lg-8 col-md-10 mx-auto">
 							          	<div class="post-heading">
-								            <h1>{newsItem.title}</h1>
-								            <f:if condition="{newsItem.teaser}"><h2 class="subheading">{newsItem.teaser}</h2></f:if>
+								            <h1>{newsItem -> f:render.text(field: 'title')}</h1>
+								            <f:variable name="teaser">{newsItem -> f:render.text(field: 'teaser', optional: true)}</f:variable>
+								            <f:if condition="{teaser}"><h2 class="subheading">{teaser}</h2></f:if>
 								            <span class="meta">
 										  		<f:translate key="posted" extensionName="ns_theme_cleanblog" />
 										  		<f:translate key="on" extensionName="ns_theme_cleanblog" /> <f:format.date format="%B %d, %Y">{newsItem.datetime}</f:format.date>
-										  		<f:if condition="{newsItem.author}">
+										  		<f:variable name="author">{newsItem -> f:render.text(field: 'author', optional: true)}</f:variable>
+										  		<f:if condition="{author}">
 										  			<f:translate key="by" extensionName="ns_theme_cleanblog" />
-													{newsItem.author}
+													{author}
 										  		</f:if>
 								          	</span>
 							          	</div>
@@ -87,14 +89,16 @@
 					      	<div class="row">
 						        <div class="col-lg-8 col-md-10 mx-auto">
 						          	<div class="post-heading">
-							            <h1>{newsItem.title}</h1>
-							            <f:if condition="{newsItem.teaser}"><h2 class="subheading">{newsItem.teaser}</h2></f:if>
+							            <h1>{newsItem -> f:render.text(field: 'title')}</h1>
+							            <f:variable name="teaser">{newsItem -> f:render.text(field: 'teaser', optional: true)}</f:variable>
+							            <f:if condition="{teaser}"><h2 class="subheading">{teaser}</h2></f:if>
 							            <span class="meta">
 							              	<f:translate key="posted" extensionName="ns_theme_cleanblog" />
 										  		<f:translate key="on" extensionName="ns_theme_cleanblog" /> <f:format.date format="%B %d, %Y">{newsItem.datetime}</f:format.date>
-										  		<f:if condition="{newsItem.author}">
+										  		<f:variable name="author">{newsItem -> f:render.text(field: 'author', optional: true)}</f:variable>
+										  		<f:if condition="{author}">
 										  			<f:translate key="by" extensionName="ns_theme_cleanblog" />
-													{newsItem.author}
+													{author}
 										  		</f:if>
 							          	</span>
 						          	</div>
@@ -135,7 +139,7 @@
 									</f:else>
 								</f:if>
 							</f:for>
-					      	<f:format.html>{newsItem.bodytext}</f:format.html>
+					      	{newsItem -> f:render.text(field: 'bodytext')}
 					      	<f:if condition="{newsItem.contentElements}">
 								<!-- content elements -->
 								<f:cObject typoscriptObjectPath="lib.tx_news.contentElementRendering">{newsItem.contentElementIdList}</f:cObject>

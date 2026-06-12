@@ -110,6 +110,11 @@ page {
 		}
 
 		dataProcessing {
+			100 = record-transformation
+			100 {
+				table = pages
+			}
+
 			101 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
 			101 {
 				levels = 5
