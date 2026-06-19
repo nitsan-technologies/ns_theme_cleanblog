@@ -8,8 +8,9 @@
 	      	<div class="row">
 		        <div class="col-lg-8 col-md-10 mx-auto">
 					<div class="site-heading">
-						<h1>{data.title}</h1>
-						<f:if condition="{data.subtitle}"><span class="subheading">{data.subtitle}</span></f:if>
+						<h1>{record -> f:render.text(field: 'title')}</h1>
+						<f:variable name="subtitle">{record -> f:render.text(field: 'subtitle', optional: true)}</f:variable>
+						<f:if condition="{subtitle}"><span class="subheading">{subtitle}</span></f:if>
 					</div>
 		        </div>
 	      	</div>
@@ -18,8 +19,10 @@
 	<div class="container">
 	    <div class="row">
 			<div class="{f:if(condition: '{data.layout}', then: 'col-lg-12 col-md-12 mx-auto', else: 'col-lg-8 col-md-10 mx-auto')}">
-				<!-- Render main content colpost=0 -->
-				<f:cObject typoscriptObjectPath="lib.content"/>
+				<!-- Render main content colPos=0 -->
+				<f:mark.contentArea colPos="0">
+					<f:cObject typoscriptObjectPath="lib.content"/>
+				</f:mark.contentArea>
 			</div>
 	    </div>
   	</div>

@@ -44,5 +44,8 @@
         "web-dir": ".Build/public",
         "extension-key": "ns_theme_cleanblog"
     }
+  },
+  "suggest": {
+      "friendsoftypo3/visual-editor": "Enable WYSIWYG frontend editing for the T3 New Age theme"
   }
 }
