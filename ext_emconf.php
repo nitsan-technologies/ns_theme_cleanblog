@@ -35,7 +35,6 @@ $EM_CONF['ns_theme_cleanblog'] = array (
     ),
     'suggests' => 
     array (
-      'visual_editor' => '1.0.0-1.99.99',
     ),
   ),
 );
