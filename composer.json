@@ -26,10 +26,16 @@
   "license": "MIT",
   "require": {
     "typo3/cms-core": "^12 || ^13 || ^14",
+    "typo3/cms-impexp": "^12 || ^13 || ^14",
     "georgringer/news": "^14.0",
     "nitsan/ns-basetheme": "^14.0.0",
     "nitsan/ns-news-comments": "^14.0",
     "friendsoftypo3/content-blocks": "^2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "NITSAN\\NsThemeCleanblog\\": "Classes/"
+    }
   },
   "replace": {
       "typo3-ter/ns-theme-cleanblog": "self.version"
