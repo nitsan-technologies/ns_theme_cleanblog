@@ -14,7 +14,7 @@ $EM_CONF['ns_theme_cleanblog'] = array (
   'title' => 'T3 Clean Blog – TYPO3 Blog Template',
   'description' => 'A modern and minimalist TYPO3 blog template perfect for personal and business blogs. Easy to configure, SEO-optimized, and performance-focused for TYPO3 v12 & v13.',
   'category' => 'templates',
-  'version' => '14.1.2',
+  'version' => '14.1.3',
   'state' => 'stable',
   'uploadfolder' => false,
   'author' => 'Team T3Planet',
@@ -30,6 +30,7 @@ $EM_CONF['ns_theme_cleanblog'] = array (
     'depends' => 
     array (
       'typo3' => '12.0.0-14.9.99',
+      'ns_license' => '14.5.4-14.9.99',
       'impexp' => '12.0.0-14.9.99',
       'news' => '13.0.0-14.9.99',
       'ns_basetheme' => '13.0.0-14.9.99',

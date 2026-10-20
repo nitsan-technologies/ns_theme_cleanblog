@@ -14,10 +14,10 @@
   "homepage": "https://github.com/nitsan-technologies/ns_theme_blog/",
   "authors": [
     {
-        "name": "Team NITSAN",
-        "email": "info@nitsan.in",
-        "role": "Developer",
-        "homepage": "http://www.nitsan.in/"
+      "name": "Team NITSAN",
+      "email": "info@nitsan.in",
+      "role": "Developer",
+      "homepage": "http://www.nitsan.in/"
     }
   ],
   "support": {
@@ -26,6 +26,7 @@
   "license": "MIT",
   "require": {
     "typo3/cms-core": "^12 || ^13 || ^14",
+    "nitsan/ns-license": "^14.5.4",
     "typo3/cms-impexp": "^12 || ^13 || ^14",
     "georgringer/news": "^14.0",
     "nitsan/ns-basetheme": "^14.0.0",
@@ -38,7 +39,7 @@
     }
   },
   "replace": {
-      "typo3-ter/ns-theme-cleanblog": "self.version"
+    "typo3-ter/ns-theme-cleanblog": "self.version"
   },
   "config": {
     "vendor-dir": ".Build/vendor/",
@@ -46,12 +47,12 @@
   },
   "extra": {
     "typo3/cms": {
-        "cms-package-dir": "{$vendor-dir}/typo3/cms",
-        "web-dir": ".Build/public",
-        "extension-key": "ns_theme_cleanblog"
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/public",
+      "extension-key": "ns_theme_cleanblog"
     }
   },
   "suggest": {
-      "friendsoftypo3/visual-editor": "Enable WYSIWYG frontend editing for the T3 New Age theme"
+    "friendsoftypo3/visual-editor": "Enable WYSIWYG frontend editing for the T3 New Age theme"
   }
 }
